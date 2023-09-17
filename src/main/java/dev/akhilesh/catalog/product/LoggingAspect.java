@@ -24,6 +24,6 @@ public class LoggingAspect {
 
     @AfterReturning(pointcut = "afterReturningPointCut()", returning = "retVal")
     public void afterReturning(String retVal){
-        System.out.println( "After returning"+ retVal);
+        System.out.println( "After returning "+ retVal);
     }
 }

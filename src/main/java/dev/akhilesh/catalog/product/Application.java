@@ -25,7 +25,7 @@ public class Application {
 
         ShoppingCart sc=ac.getBean(ShoppingCart.class);
         sc.checkout("new input");
-
+        sc.Quantity("qty");
         //Staff sf2 = ac.getBean(Doctor.class);
 //
 //		sf2.assist();
