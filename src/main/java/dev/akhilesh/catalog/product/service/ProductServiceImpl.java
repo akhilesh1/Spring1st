@@ -40,4 +40,9 @@ public class ProductServiceImpl implements  ProductService{
         }
         return  productRepository.save(dbRecord);
     }
+
+    @Override
+    public Product getProductByName(String searchString) {
+        return productRepository.findByName(searchString);
+    }
 }

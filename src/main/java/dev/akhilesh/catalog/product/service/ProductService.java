@@ -12,4 +12,6 @@ public interface ProductService {
     Product getProduct(Long id);
 
     Product updateProduct(Long id, Product product);
+
+    Product getProductByName(String searchString);
 }

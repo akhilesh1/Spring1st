@@ -33,4 +33,10 @@ public class ProductController {
     public Product updateProduct(@PathVariable("id") Long id,@RequestBody Product product){
         return ps.updateProduct(id,product);
     }
+
+    @GetMapping("/Products/name/{name}")
+    public Product getProduct(@PathVariable("name") String searchString){
+        return ps.getProductByName(searchString);
+    }
+
 }

@@ -9,63 +9,63 @@ import jakarta.persistence.Id;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long Id;
+    private Long id;
 
     @Override
     public String toString() {
         return "Product{" +
-                "Id=" + Id +
-                ", Name='" + Name + '\'' +
-                ", Description='" + Description + '\'' +
-                ", Code='" + Code + '\'' +
+                "Id=" + id +
+                ", Name='" + name + '\'' +
+                ", Description='" + description + '\'' +
+                ", Code='" + code + '\'' +
                 '}';
     }
     //
     //Here note all the fields are private and only the get and post methods are public
-    private String Name;
-    private String Description;
+    private String name;
+    private String description;
 
     public Product(Long id, String name, String description, String code) {
-        Id = id;
-        Name = name;
-        Description = description;
-        Code = code;
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.code = code;
     }
 
     public Product(){}
 
     
-    private String Code;
+    private String code;
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        this.description = description;
     }
 
     public String getCode() {
-        return Code;
+        return code;
     }
 
     public void setCode(String code) {
-        Code = code;
+        this.code = code;
     }
 }
